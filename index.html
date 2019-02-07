@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <head>
-	<title>IAMAL</title>
+    <title>IAMAL</title>
+    <link href="style/style.css" rel="stylesheet"></link>
 </head>
 <body>
-	<p> here is my paragraph </p>
-	<canvas id="c"></canvas>
+    <div id="pageContent">
+        <div class="mainContainer">
+        <p> here is my paragraph </p>
+        <a href="directory/about.html">about me</a>
+        <a href="directory/paper.html">Paper Test</a><br><br>
+        <canvas id="c"></canvas>
+        <div id="uiContainer">
+            <div id="ui">
+            <div id="x"></div>
+            <div id="y"></div>
+            <div id="angle"></div>
+            <div id="scaleX"></div>
+            <div id="scaleY"></div>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
-	<script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="js/libs/three.js-master/build/three.js"></script> -->
+    <script type="text/javascript" src="js/libs/webgl-utils.js"></script>
+    <script src="https://webgl2fundamentals.org/webgl/resources/webgl-lessons-ui.js"></script>
+    <script src="https://webgl2fundamentals.org/webgl/resources/m3.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </html>

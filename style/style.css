@@ -1,0 +1,23 @@
+#pageContent {
+    box-sizing: border-box;
+    /* margin: 0px auto; */
+    /* margin-right: 100px; */
+    width: 100%;
+    padding: 40px 0;
+    font-size: 0.9em;
+    z-index: 500;
+    text-align:center ;
+}
+
+.mainContainer{
+    width: 75% ;
+    display:inline-block ;
+    margin-bottom: 30px ;
+    padding: 0 ;
+    box-sizing: border-box ;
+    text-align: left ;
+}
+
+.sub-content {
+    margin: 0 auto ;
+}
