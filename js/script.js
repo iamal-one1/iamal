@@ -74,7 +74,7 @@ function setGeometry(gl) {
 	gl.bufferData(
 		gl.ARRAY_BUFFER,
 		new Float32Array([
-			   0, -100,
+			   200, -200,
 			 150,  125,
 			-175,  100]),
 		gl.STATIC_DRAW);
@@ -84,8 +84,8 @@ function setGeometry(gl) {
 
 function main() {
 	var canvas = document.getElementById("c") ;
-	canvas.width = 400 ;
-	canvas.height = 300 ;
+	canvas.width = window.innerWidth ;
+	canvas.height = window.innerHeight ;
 	console.log(canvas) ;
 
 	var gl = canvas.getContext("webgl2") ;
@@ -105,7 +105,7 @@ function main() {
 	var buffer = gl.createBuffer();
 	  gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
 	  
-	  setGeometry(gl);
+	  setRectangle(gl, -200, -200, canvas.width, canvas.height);
 
 	  gl.enableVertexAttribArray(positionLocation);
 	  var size = 2;
